@@ -1,12 +1,21 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    <bodyTop></bodyTop>
     <router-view/>
+    <bodyFoot></bodyFoot>
   </div>
 </template>
+
+<script>
+import bodyTop from './components/home/bodyTop'
+export default {
+  name:'app',
+  data() {
+    return {}
+  },
+  
+}
+</script>
 
 <style lang="less">
 #app {
